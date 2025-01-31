@@ -85,10 +85,11 @@ After starting, the program will prompt you to select a language (zh/en/jp) and 
 ## Usage
 1. **Run main.py**: Start the car rental system.
 2. **Select Language**: Choose your preferred language (Chinese, English, or Japanese) as prompted.
-3. **Main Menu**: After entering the main menu, you can choose to register, log in, or exit the system.
+3. **Main Menu**: After entering the main menu, you can choose to register, log in, or exit the system. Administrator can add other administrators, and default administrator account is `admin` with password `123456`.
 4. **Login**: After logging in, you will enter different menu interfaces based on your user role (administrator or regular user).
 5. **Menu Operations**: Follow the menu prompts to select and perform corresponding functions.
 
 ## Dependencies
 To ensure the program runs correctly, the following dependencies are required:
 * **tabulate:** For displaying data in a tabular format.
+* **

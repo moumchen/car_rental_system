@@ -52,7 +52,8 @@ CREATE TABLE user (
 
 -- add a default admin user
 INSERT INTO user (username, password, role_type, deleted_flag)
-VALUES ('admin', '123456', 1, 0);
+VALUES ('admin', '123456', 1, 0),
+       ('chen', '123', 0, 0);
 
 -- add some default cars
 INSERT INTO car (make, model, manufactured_year, mileage, available, min_lease_limit, max_lease_limit, deleted_flag, created_time, updated_time, deleted_time, daily_rent, extra_fee) VALUES
@@ -66,3 +67,12 @@ INSERT INTO car (make, model, manufactured_year, mileage, available, min_lease_l
 ('Ford', 'Mustang', 2023, 5000, 1, 25, 150, 0, '2025-01-30 12:00:00', '2025-01-30 12:00:00', '1900-01-01 00:00:00', 90.0, 200.0),
 ('Nissan', 'Altima', 2022, 40000, 1, 20, 90, 0, '2025-01-30 13:00:00', '2025-01-30 13:00:00', '1900-01-01 00:00:00', 45.0, 90.0),
 ('Hyundai', 'Sonata', 2021, 70000, 1, 10, 80, 0, '2025-01-30 14:00:00', '2025-01-30 14:00:00', '1900-01-01 00:00:00', 30.0, 60.0);
+
+-- add some default lease details
+INSERT INTO lease_details (id, user_id, car_id, lease_start_time, lease_end_time, interval_days, rent, deleted_flag, created_time, updated_time, deleted_time, approved_flag, refusal_reason)
+VALUES (1, 2, 7, '2020-01-01 00:00:00', '2020-01-02 00:00:00', 0, 1155.0, 0, '2025-01-30 07:18:07', '2025-01-30 07:18:07', '1900-01-01 00:00:00', 2, 'This car is unavailable ...');
+INSERT INTO lease_details (id, user_id, car_id, lease_start_time, lease_end_time, interval_days, rent, deleted_flag, created_time, updated_time, deleted_time, approved_flag, refusal_reason)
+VALUES (2, 2, 7, '2020-01-01 00:00:00', '2020-16-01 00:00:00', 0, 595.0, 0, '2025-01-30 09:48:21', '2025-01-30 09:48:21', '1900-01-01 00:00:00', 2, 'Unavailable now');
+INSERT INTO lease_details (id, user_id, car_id, lease_start_time, lease_end_time, interval_days, rent, deleted_flag, created_time, updated_time, deleted_time, approved_flag, refusal_reason)
+VALUES (3, 2, 7, '2025-01-01 00:00:00', '2025-19-01 00:00:00', 0, 700.0, 0, '2025-01-30 09:51:01', '2025-01-30 09:51:01', '1900-01-01 00:00:00', 0, 'Unavailable now');
+
