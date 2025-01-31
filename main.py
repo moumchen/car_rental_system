@@ -70,6 +70,9 @@ def update_car_action(user):
 def query_car_action(user):
     service.query_car(user)
 
+def query_all_cars_action(user):
+    service.query_all_cars(user)
+
 
 def lease_application_query_action(user):
     service.lease_application_query(user)
@@ -84,6 +87,9 @@ def lease_details_query_action(user):
 
 def customer_view_cars_action(user):
     service.customer_view_cars(user)
+
+def customer_view_all_cars_action(user):
+    service.customer_view_all_cars(user)
 
 
 def customer_book_car_action(user):
@@ -168,6 +174,7 @@ def create_menus():
             Action(language.MANAGER_CAR_PAGE["delete_car_option"], delete_car_action),
             Action(language.MANAGER_CAR_PAGE["update_car_option"], update_car_action),
             Action(language.MANAGER_CAR_PAGE["query_car_option"], query_car_action),
+            Action(language.MANAGER_CAR_PAGE["query_all_cars_option"], query_all_cars_action),
             Action(language.MANAGER_CAR_PAGE["exit_option"], car_admin_exit_action),
         ]
     )
@@ -193,6 +200,7 @@ def create_menus():
         language.CUSTOMER_MAIN_PAGE["welcome_tip"],
         [
             Action(language.CUSTOMER_MAIN_PAGE["view_cars_option"], customer_view_cars_action),
+            Action(language.CUSTOMER_MAIN_PAGE["view_all_cars_option"], customer_view_all_cars_action),
             Action(language.CUSTOMER_MAIN_PAGE["book_car_option"], customer_book_car_action),
             Action(language.CUSTOMER_MAIN_PAGE["order_history_option"], customer_order_history_action),
             Action(language.CUSTOMER_MAIN_PAGE["exit_option"], customer_exit_action),

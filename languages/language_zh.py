@@ -85,7 +85,8 @@ MANAGER_CAR_PAGE = {
     "delete_car_option": "2. 删除车辆",
     "update_car_option": "3. 更新车辆",
     "query_car_option": "4. 按条件查询车辆",
-    "exit_option": "5. 返回管理员主页面",
+    "query_all_cars_option": "5. 显示所有车辆",
+    "exit_option": "6. 返回管理员主页面",
 
     "car_admin_id_prompt": "请输入车辆ID: ",
     "car_admin_make_prompt": "请输入车辆品牌: ",
@@ -159,10 +160,11 @@ MANAGER_LEASE_DETAILS_PAGE = {
 }
 CUSTOMER_MAIN_PAGE = {
     "welcome_tip": "欢迎来到顾客系统！",
-    "view_cars_option": "1. 查看可用车辆",
-    "book_car_option": "2. 预订车辆",
-    "order_history_option": "3. 查看订单历史",
-    "exit_option": "4. 返回主页面",
+    "view_cars_option": "1. 查看可用车辆(条件查询)",
+    "view_all_cars_option": "2. 查看所有可用车辆",
+    "book_car_option": "3. 预订车辆",
+    "order_history_option": "4. 查看订单历史",
+    "exit_option": "5. 返回主页面",
 
     "thank_prompt": "\n感谢您使用顾客系统，再见！",
     "customer_view_cars_make_prompt": "请输入您要查询的车辆品牌: ",

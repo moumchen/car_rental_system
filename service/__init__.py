@@ -318,3 +318,37 @@ def customer_order_history(user):
         print(tabulate.tabulate(rows, headers=headers, tablefmt="grid"))
         print(language.CUSTOMER_MAIN_PAGE["customer_order_history_success_tip"] + str(len(orders)))
     input(language.PENDING_PROMPT)
+
+
+def query_all_cars(user):
+    language = config.get_language()
+    cars = car_admin.query_car( "", "", "", "", "", "", "", None)
+    if len(cars) == 0:
+        print(language.MANAGER_CAR_PAGE["car_admin_query_no_result_tip"])
+    else:
+        headers = ["id", "make", "model", "manufactured_year", "mileage", "daily_rent", "extra_fee", "min_lease_limit",
+                   "max_lease_limit"]
+        rows = []
+        for car in cars:
+            rows.append([car.id, car.make, car.model, car.manufactured_year, car.mileage, car.daily_rent, car.extra_fee,
+                         car.min_lease_limit, car.max_lease_limit])
+        print(tabulate.tabulate(rows, headers=headers, tablefmt="grid"))
+        print(language.MANAGER_CAR_PAGE["car_admin_query_success_tip"] + str(len(cars)))
+    input(language.PENDING_PROMPT)
+
+
+def customer_view_all_cars(user):
+    language = config.get_language()
+    cars = car_admin.query_car("", "", "", "", "", "", "", 1)
+    if len(cars) == 0:
+        print(language.CUSTOMER_MAIN_PAGE["customer_view_cars_no_result_tip"])
+    else:
+        headers = ["id", "make", "model", "manufactured_year", "mileage", "daily_rent", "extra_fee", "min_lease_limit",
+                   "max_lease_limit"]
+        rows = []
+        for car in cars:
+            rows.append([car.id, car.make, car.model, car.manufactured_year, car.mileage, car.daily_rent, car.extra_fee,
+                         car.min_lease_limit, car.max_lease_limit])
+        print(tabulate.tabulate(rows, headers=headers, tablefmt="grid"))
+        print(language.CUSTOMER_MAIN_PAGE["customer_view_cars_success_tip"] + str(len(cars)))
+    input(language.PENDING_PROMPT)

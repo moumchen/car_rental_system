@@ -85,7 +85,8 @@ MANAGER_CAR_PAGE = {
     "delete_car_option": "2. Delete a car",
     "update_car_option": "3. Update a car",
     "query_car_option": "4. Query cars by optional conditions",
-    "exit_option": "5. Back to admin main page",
+    "query_all_car_option": "5. Query all cars",
+    "exit_option": "6. Back to admin main page",
 
     "car_admin_id_prompt": "Please input the id of the car: ",
     "car_admin_make_prompt": "Please input the make of the car: ",
@@ -159,10 +160,11 @@ MANAGER_LEASE_DETAILS_PAGE = {
 }
 CUSTOMER_MAIN_PAGE = {
     "welcome_tip": "Welcome to customer system!",
-    "view_cars_option": "1. View available cars",
-    "book_car_option": "2. Book a car",
-    "order_history_option": "3. View order history",
-    "exit_option": "4. Back to main page",
+    "view_cars_option": "1. View available cars by conditions",
+    "view_all_cars_option": "2. View all available cars",
+    "book_car_option": "3. Book a car",
+    "order_history_option": "4. View order history",
+    "exit_option": "5. Back to main page",
 
     "thank_prompt": "\nThank you for using customer system, see you next time!",
     "customer_view_cars_make_prompt": "Please input the make of the car you want to query: ",

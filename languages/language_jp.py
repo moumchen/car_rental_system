@@ -82,7 +82,8 @@ MANAGER_CAR_PAGE = {
     "delete_car_option": "2. 車両を削除",
     "update_car_option": "3. 車両を更新",
     "query_car_option": "4. オプション条件で車両を検索",
-    "exit_option": "5. 管理者メインページに戻る",
+    "query_all_cars_option": "5. 全ての車両を表示",
+    "exit_option": "6. 管理者メインページに戻る",
 
     "car_admin_id_prompt": "車両のIDを入力してください: ",
     "car_admin_make_prompt": "車両のメーカーを入力してください: ",
@@ -156,9 +157,10 @@ MANAGER_LEASE_DETAILS_PAGE = {
 CUSTOMER_MAIN_PAGE = {
     "welcome_tip": "顧客システムへようこそ！",
     "view_cars_option": "1. 利用可能な車両を表示",
-    "book_car_option": "2. 車両を予約",
-    "order_history_option": "3. 注文履歴を表示",
-    "exit_option": "4. メインページに戻る",
+    "view_all_cars_option": "2. 全ての車両を表示",
+    "book_car_option": "3. 車両を予約",
+    "order_history_option": "4. 注文履歴を表示",
+    "exit_option": "5. メインページに戻る",
 
     "thank_prompt": "\n顧客システムのご利用ありがとうございました、またお会いしましょう！",
     "customer_view_cars_make_prompt": "検索したい車両のメーカーを入力してください: ",
