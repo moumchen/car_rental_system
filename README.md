@@ -76,6 +76,10 @@ This project is a command-line car rental system simulation program developed us
 4. **Run the program:**
     ```bash
     python main.py
+5. **Optional - Initialize database:**
+    ```bash
+    python db_init.py
+   
 After starting, the program will prompt you to select a language (zh/en/jp) and then enter the main menu.
 
 ## Dependencies
