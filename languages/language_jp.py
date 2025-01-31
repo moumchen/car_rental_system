@@ -175,8 +175,8 @@ CUSTOMER_MAIN_PAGE = {
     "customer_view_cars_success_tip": "車両の検索に成功しました！合計件数:",
 
     "customer_book_car_id_prompt": "予約したい車両のIDを入力してください: ",
-    "customer_book_car_start_time_prompt": "リースの開始時間を入力してください (形式: dd-mm-yyyy): ",
-    "customer_book_car_end_time_prompt": "リースの終了時間を入力してください (形式: dd-mm-yyyy): ",
+    "customer_book_car_start_time_prompt": "リースの開始時間を入力してください (形式: yyyy-mm-dd): ",
+    "customer_book_car_end_time_prompt": "リースの終了時間を入力してください (形式: yyyy-mm-dd): ",
     "customer_book_car_confirm_prompt": "予約を確定してください、合計料金は ",
     "customer_book_car_not_available_tip": "この車両は現在利用できないか、存在しません、確認してください。",
     "customer_book_car_cancel_tip": "注文をキャンセルしました。",

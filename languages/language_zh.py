@@ -179,8 +179,8 @@ CUSTOMER_MAIN_PAGE = {
     "customer_view_cars_success_tip": "查询车辆成功！总数:",
 
     "customer_book_car_id_prompt": "请输入您要预订的车辆ID: ",
-    "customer_book_car_start_time_prompt": "请输入租赁开始时间 (格式: 日-月-年): ",
-    "customer_book_car_end_time_prompt": "请输入租赁结束时间 (格式: 日-月-年): ",
+    "customer_book_car_start_time_prompt": "请输入租赁开始时间 (格式: yyyy-mm-dd): ",
+    "customer_book_car_end_time_prompt": "请输入租赁结束时间 (格式:yyyy-mm-dd): ",
     "customer_book_car_confirm_prompt": "请确认预订，请注意总费用为 ",
     "customer_book_car_not_available_tip": "车辆当前不可用或不存在，请检查。",
     "customer_book_car_cancel_tip": "取消订单。",

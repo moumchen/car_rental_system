@@ -179,8 +179,8 @@ CUSTOMER_MAIN_PAGE = {
     "customer_view_cars_success_tip": "Query car successfully! total count:",
 
     "customer_book_car_id_prompt": "Please input the id of the car you want to book: ",
-    "customer_book_car_start_time_prompt": "Please input the start time of the lease (format: dd-mm-yyyy): ",
-    "customer_book_car_end_time_prompt": "Please input the end time of the lease (format: dd-mm-yyyy): ",
+    "customer_book_car_start_time_prompt": "Please input the start time of the lease (format: yyyy-mm-dd): ",
+    "customer_book_car_end_time_prompt": "Please input the end time of the lease (format: yyyy-mm-dd): ",
     "customer_book_car_confirm_prompt": "Please confirm to order it, please notice the total fee is ",
     "customer_book_car_not_available_tip": "The car is not available now or doesn't exist, please check.",
     "customer_book_car_cancel_tip": "Cancel the order.",
