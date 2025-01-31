@@ -5,7 +5,7 @@ from utils.decorators import db_connection
 @db_connection
 def lease_application_query(cursor, conn, user):
     # join user and car table to get username and car make, model
-    cursor.execute("select ld.id, u.username, c.make, c.model, ld.lease_start_time, ld.lease_end_time, ld.rent, ld.approved_flag, ld.refusal_reason, u.id, c.id from lease_details ld join user u on ld.user_id = u.id join car c on ld.car_id = c.id where ld.deleted_flag = 0")
+    cursor.execute("select ld.id, u.username, c.make, c.model, ld.lease_start_time, ld.lease_end_time, ld.rent, ld.approved_flag, ld.refusal_reason, u.id, c.id from lease_details ld join user u on ld.user_id = u.id join car c on ld.car_id = c.id where ld.deleted_flag = 0 and ld.approved_flag = 0")
     rows = cursor.fetchall()
     lease_details = []
     for row in rows:

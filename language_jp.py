@@ -134,6 +134,10 @@ MANAGER_LEASE_APPLICATION_PAGE = {
     "lease_application_admin_audit_success_tip": "リース申請の審査に成功しました！",
     "lease_application_admin_audit_fail_tip": "リース申請の審査に失敗しました、入力内容を確認するかシステム管理者にお問い合わせください。",
     "lease_application_admin_input_error": "入力が無効です、確認してください。",
+    "lease_application_query_user_id_prompt": "検索したいリース申請のユーザーIDを入力してください: ",
+    "lease_application_query_car_id_prompt": "検索したいリース申請の車両IDを入力してください: ",
+    "lease_application_query_no_result_tip": "条件に一致するリース申請はありません。",
+    "lease_application_query_success_tip": "リース申請の検索に成功しました！合計件数:",
 
 }
 

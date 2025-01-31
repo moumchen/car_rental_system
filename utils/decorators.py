@@ -46,7 +46,7 @@ def db_connection(func):
         result = func(cursor, conn, *args, **kwargs)
         conn.commit()
         cursor.close()
-        db_conn_manager.close_connection(conn)
+        db_conn_manager.release_connection(conn)
         return result
 
     return wrapper

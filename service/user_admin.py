@@ -34,7 +34,7 @@ def register(cursor, conn, username, password):
     if len(users) != 0:
         return None
     cursor.execute("insert into user(username, password, role_type, deleted_flag) values('" + username + "','" + password + "', 0, 0)")
-    return get_user_by_username(username)[0]
+    return User()
 
 def create_user(cursor, conn, username, password, role_type):
     users = get_user_by_username(username)

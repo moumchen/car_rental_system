@@ -137,6 +137,11 @@ MANAGER_LEASE_APPLICATION_PAGE = {
     "lease_application_admin_audit_success_tip": "Audit lease application successfully!",
     "lease_application_admin_audit_fail_tip": "Audit lease application failed, please check the input or contact the system administrator.",
     "lease_application_admin_input_error": "Invalid input, please check.",
+    "lease_application_query_user_id_prompt": "Please input the user id of the lease application you want to query: ",
+    "lease_application_query_car_id_prompt": "Please input the car id of the lease application you want to query: ",
+    "lease_application_query_no_result_tip": "no lease application meets the conditions.",
+    "lease_application_query_success_tip": "Query lease application successfully! total count:",
+
 
 }
 
