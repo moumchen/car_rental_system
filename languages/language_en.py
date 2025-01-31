@@ -85,7 +85,7 @@ MANAGER_CAR_PAGE = {
     "delete_car_option": "2. Delete a car",
     "update_car_option": "3. Update a car",
     "query_car_option": "4. Query cars by optional conditions",
-    "query_all_car_option": "5. Query all cars",
+    "query_all_cars_option": "5. Query all cars",
     "exit_option": "6. Back to admin main page",
 
     "car_admin_id_prompt": "Please input the id of the car: ",
