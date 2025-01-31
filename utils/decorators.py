@@ -11,11 +11,11 @@ if (not hasattr(thread_local, "LANGUAGE")):
     thread_local.LANGUAGE = "en"  # default language is English
 language = thread_local.LANGUAGE
 if language == "jp":
-    from language_jp import *
+    from languages.language_jp import *
 elif language == "zh":
-    from language_zh import *
+    from languages.language_zh import *
 else:
-    from language_en import *
+    from languages.language_en import *
 
 def new_page(func):
     """

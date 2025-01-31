@@ -1,5 +1,5 @@
 from utils.decorators import new_page
-from language_en import *
+from languages.language_en import *
 
 
 class Menu:

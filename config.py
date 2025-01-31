@@ -13,7 +13,7 @@ _language_module = None
 
 def initialize_language(choice):
     global _language_module
-    module_name = f"language_{choice}"
+    module_name = f"languages.language_{choice}"
     try:
         _language_module = importlib.import_module(module_name)
         print(f"successfully initialize the language package: {choice} ")
@@ -31,7 +31,7 @@ def get_language():
 
 def get_language_choice():
     # get language files in current directory
-    files = os.listdir()
+    files = os.listdir("languages")
     language_files = []
     for file in files:
         if file.startswith("language_") and file.endswith(".py"):
