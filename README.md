@@ -28,7 +28,7 @@ This project is a command-line car rental system simulation program developed us
     * Query lease details
 * **Customer Features (Regular User Role):**
     * View available car list
-    * Book a car
+    * Book a car, automatically compute the lease fee based on the lease period, daily rent and extra fee
     * View personal lease history 
 
 ## Project Structure
@@ -81,6 +81,13 @@ This project is a command-line car rental system simulation program developed us
     python db_init.py
    
 After starting, the program will prompt you to select a language (zh/en/jp) and then enter the main menu.
+
+## Usage
+1. **Run main.py**: Start the car rental system.
+2. **Select Language**: Choose your preferred language (Chinese, English, or Japanese) as prompted.
+3. **Main Menu**: After entering the main menu, you can choose to register, log in, or exit the system.
+4. **Login**: After logging in, you will enter different menu interfaces based on your user role (administrator or regular user).
+5. **Menu Operations**: Follow the menu prompts to select and perform corresponding functions.
 
 ## Dependencies
 To ensure the program runs correctly, the following dependencies are required:
