@@ -93,3 +93,8 @@ After starting, the program will prompt you to select a language (zh/en/jp) and 
 To ensure the program runs correctly, the following dependencies are required:
 * **tabulate:** For displaying data in a tabular format.
 * **
+
+## Display
+![img.png](readme/display1.png)
+![img.png](readme/p2.png)
+![img.png](readme/page3.png)

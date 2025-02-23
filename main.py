@@ -1,7 +1,7 @@
 # main.py
 from time import sleep
 
-import config  # 导入 config 模块
+import config
 import service
 from models.action import Action
 from models.menu import Menu

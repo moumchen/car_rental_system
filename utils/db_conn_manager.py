@@ -47,11 +47,13 @@ class DBConnectionManager:
     def acquire_connection(self):
         """
         Acquire a database connection from the connection pool.
-        If no available connection and pool is not full, create a new connection (connections beyond pool_size will be closed after use and not put back into the pool).
+        If no available connection and pool is not full, create a new connection
+        (connections beyond pool_size will be closed after use and not put back into the pool).
         If the connection pool is full and no available connection, return None.
         """
         if self._available_connections:
-            return self._available_connections.pop(0) # Return and remove from available connections list
+            # Return and remove from available connections list
+            return self._available_connections.pop(0)
         elif len(self._connections) < self.pool_size:
             # If the connection pool is not full, but no available connection, create a new connection
             conn = self._create_connection()
