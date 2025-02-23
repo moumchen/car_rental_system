@@ -95,7 +95,7 @@ To ensure the program runs correctly, the following dependencies are required:
 * **
 
 ## Display
-![img_2.png](readme/img_2.png)
-![img_3.png](readme/img_3.png)
-![img_1.png](readme/img_1.png)
-![img.png](readme/img.png)
+![language.png](readme/language.png)
+![japanese.png](readme/japanese.png)
+![English_main.png](readme/English_main.png)
+![User_admin.png](readme/User_admin.png)
